@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Pixels</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Pixel Calculator</h1>
+        <div class="calculator">
+            <div class="input-group">
+                <label for="designWidth">Design File Width (px):</label>
+                <input type="number" id="designWidth" placeholder="e.g., 1080" oninput="calculatePixels()">
+            </div>
+            
+            <div class="input-group">
+                <label for="elementWidth">Element Width in Design (px):</label>
+                <input type="number" id="elementWidth" placeholder="Enter width" oninput="calculatePixels()">
+            </div>
+
+            <div class="input-group">
+                <label for="elementHeight">Element Height in Design (px):</label>
+                <input type="number" id="elementHeight" placeholder="Enter height" oninput="calculatePixels()">
+            </div>
+            
+            <div class="result">
+                <h3>Results:</h3>
+                <p>Your screen width: <span id="screenWidth">0</span>px</p>
+                <p>Calculated width: <span id="calculatedWidth">0</span>px</p>
+                <p>Calculated height: <span id="calculatedHeight">0</span>px</p>
+                <p>Aspect ratio: <span id="aspectRatio">0:0</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
